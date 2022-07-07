@@ -19,6 +19,6 @@ public class Retangulo {
         System.out.println("Qual a medida em cm da altura do retângulo: ");
         double altura = input.nextDouble();
         System.out.println("A area do retângulo é: " + base * altura + " cm " );
+        System.out.println(" A base do retangulo é: " + base + " altura do retangulo é: " + altura);
     }
-
 }
