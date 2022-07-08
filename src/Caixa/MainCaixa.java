@@ -1,15 +1,17 @@
 package Caixa;
 
 import java.util.Scanner;
-
 public class MainCaixa {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        Caixa caixa = new Caixa();
+
+        caixa.saldo = 1000;
+        System.out.println("Seu saldo é de: " + caixa.saldo);
 
         boolean loop = true;
         while (loop) {
-            Caixa caixa = new Caixa();
 
             System.out.println("Digite 1 caso queira inserir credito ou 2 para retirar");
             int opcao = input.nextInt();
@@ -28,6 +30,7 @@ public class MainCaixa {
                 System.out.println("operação encerrada ");
                 loop = false;
             }
+            System.out.println("Seu saldo atual é de: "+ caixa.saldo);
         }
     }
 }
