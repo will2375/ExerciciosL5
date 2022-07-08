@@ -18,7 +18,6 @@ public class Pessoa {
     }
 
     public void dados() {
-        Pessoa pessoa = new Pessoa();
         System.out.println("Digite o nome da pessoa: ");
         nome = input.next();
         System.out.println("Digite a idade da pessoa: ");

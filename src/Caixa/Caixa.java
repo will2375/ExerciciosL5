@@ -7,7 +7,7 @@ public class Caixa {
     public double debito;
     Scanner input = new Scanner(System.in);
     public Caixa() {
-        this.saldo = saldo;
+        this.saldo = 1000;
         this.credito = credito;
         this.debito = debito;
     }
@@ -16,7 +16,6 @@ public class Caixa {
         credito = input.nextDouble();
         double novoCredito = saldo + credito;
         System.out.println("Seu credito atual é de R$: " + novoCredito);
-        saldo = novoCredito;
     }
     public void debito() {
         System.out.println("Quanto de R$ debito do caixa você retirar? :");

@@ -10,13 +10,13 @@ public class MainCaixa {
         boolean loop = true;
         while (loop) {
             Caixa caixa = new Caixa();
-            caixa.saldo= 1000;
-            System.out.println(caixa.saldo);
+
             System.out.println("Digite 1 caso queira inserir credito ou 2 para retirar");
             int opcao = input.nextInt();
 
             if (opcao == 1) {
                 caixa.credito();
+
             } else if (opcao == 2) {
                 caixa.debito();
             } else {
